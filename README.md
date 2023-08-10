@@ -1,6 +1,4 @@
-# KernelWarehouse
-
-KernelWarehouse: Towards Parameter-Efficient Dynamic Convolution
+# KernelWarehouse: Towards Parameter-Efficient Dynamic Convolution
 
 By Chao Li and Anbang Yao.
 
