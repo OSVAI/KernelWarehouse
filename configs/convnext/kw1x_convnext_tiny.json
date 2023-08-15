@@ -1,0 +1,11 @@
+{
+    "model": "kw_convnext_tiny",
+    "reduction": 0.0625,
+    "cell_num_ratio": 1,
+    "cell_inplane_ratio": 1,
+    "cell_outplane_ratio": 1,
+    "sharing_range": "layer_pwconv",
+    "drop_path": 0.3,
+    "model_ema": true,
+    "model_ema_eval": true
+}

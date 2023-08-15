@@ -1,0 +1,4 @@
+{
+    "model": "resnet50",
+    "drop_path": 0.1
+}

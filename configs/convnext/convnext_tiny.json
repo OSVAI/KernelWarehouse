@@ -1,0 +1,6 @@
+{
+    "model": "convnext_tiny",
+    "drop_path": 0.1,
+    "model_ema": true,
+    "model_ema_eval": true
+}

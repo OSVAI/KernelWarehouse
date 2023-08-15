@@ -1,0 +1,10 @@
+{
+    "model": "kw_resnet18",
+    "reduction": 0.0625,
+    "cell_num_ratio": 0.5,
+    "cell_inplane_ratio": 0.5,
+    "cell_outplane_ratio": 0.5,
+    "sharing_range": "layer_conv",
+    "drop_path": 0.0,
+    "dropout": 0.0
+}

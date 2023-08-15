@@ -1,0 +1,20 @@
+{
+    "model": "kw_mobilenetv2_100",
+    "epochs": 150,
+    "drop_path": 0.0,
+    "opt": "sgd",
+    "weight_decay": 4e-5,
+    "lr": 0.05,
+    "warmup_epochs": 0,
+    "color_jitter": 0,
+    "aa": null,
+    "reprob": 0,
+    "mixup": 0,
+    "cutmix": 0,
+    "cell_num_ratio": 4,
+    "cell_inplane_ratio": 1,
+    "cell_outplane_ratio": 1,
+    "sharing_range": ["layer"],
+    "traditional_preprocess": true,
+    "temp_epoch": 15
+}
