@@ -2,7 +2,7 @@
 
 By Chao Li and Anbang Yao.
 
-This repository is an official PyTorch implementation of ["KernelWarehouse: Towards Parameter-Efficient Dynamic Convolution", KW for short]. 
+This repository is an official PyTorch implementation of "KernelWarehouse: Towards Parameter-Efficient Dynamic Convolution", KW for short. 
 
 **KernelWarehouse** is a more general form of dynamic convolution, which can strike a favorable trade-off between parameter efficiency and representation power. Its key idea is to redefine the basic concepts of "**kernels**" and "**assembling kernels**" in dynamic convolution from the perspective of reducing kernel dimension and increasing kernel number significantly. In principle, KernelWarehouse enhances convolutional parameter dependencies within the same layer and across successive layers via tactful kernel partition and warehouse sharing. Specifically, KernelWarehouse sequentially divides a static kernel at any convolutional layer of a ConvNet into $m$ disjoint kernel cells having the same dimensions first, and then computes each kernel cell as a linear mixture based on a predefined "**warehouse**" consisting of $n$ kernel cells (e.g., $n$ = 108) which is also shared to multiple neighboring convolutional layers, and finally replaces the static kernel by assembling its corresponding $m$ mixtures in order, yielding a high degree of freedom to fit a desired parameter budget.
 
