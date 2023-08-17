@@ -101,6 +101,16 @@ Please refer to README.md in the folder of [detection](detection) for details.
 
 ## Citation
 If you find our work useful in your research, please consider citing:
+```bibtex
+@misc{li2023kernelwarehouse,
+      title={KernelWarehouse: Towards Parameter-Efficient Dynamic Convolution}, 
+      author={Chao Li and Anbang Yao},
+      year={2023},
+      eprint={2308.08361},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
 ## License
 KernelWarehouse is released under the MIT license. We encourage use for both research and commercial purposes, as long as proper attribution is given.
