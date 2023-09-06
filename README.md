@@ -113,7 +113,7 @@ If you find our work useful in your research, please consider citing:
 ```
 
 ## License
-KernelWarehouse is released under the MIT license. We encourage use for both research and commercial purposes, as long as proper attribution is given.
+KernelWarehouse is released under the Apache license. We encourage use for both research and commercial purposes, as long as proper attribution is given.
 
 ## Acknowledgment
 This repository is built based on [ConvNeXt](https://github.com/facebookresearch/ConvNeXt), [mmdetection](https://github.com/open-mmlab/mmdetection), [Dynamic-convolution-Pytorch](https://github.com/kaijieshi7/Dynamic-convolution-Pytorch), [Swin-Transformer-Object-Detection](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection) repositories. We thank the authors for releasing their amazing codes.
