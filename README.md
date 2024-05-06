@@ -4,7 +4,7 @@ By Chao Li and Anbang Yao.
 
 This repository is an official PyTorch implementation of ["KernelWarehouse: Rethinking the Design of Dynamic Convolution", KW for short, which has been accepted to ICML 2024]([https://github.com/OSVAI/KernelWarehouse]). 
 
-Dynamic convolution learns a linear mixture of static kernels weighted with their input-dependent attentions, demonstrating superior performance than normal convolution. However, it increases the number of convolutional parameters by times. This leads to no research progress that can allow researchers to explore the setting (an order of magnitude larger than the typical setting ) for pushing forward the performance boundary of dynamic convolution while enjoying parameter efficiency. To fill this gap, we propose **KernelWarehouse**, a more general form of dynamic convolution, which redefines the basic concepts of "kernels", "assembling kernels" and "attention function" through the lens of exploiting convolutional parameter dependencies within the same layer and across neighboring layers of a ConvNet. We testify the effectiveness of KernelWarehouse on ImageNet and MS-COCO datasets using various types of ConvNet architectures. Thanks to its flexible design, KernelWarehouse can even reduce the model size of a ConvNet while improving the model accuracy, and it is also applicable to vision transformers.
+Dynamic convolution learns a linear mixture of $n$ static kernels weighted with their input-dependent attentions, demonstrating superior performance than normal convolution. However, it increases the number of convolutional parameters by $n$ times. This leads to no research progress that can allow researchers to explore the setting $n>100$ (an order of magnitude larger than the typical setting $n<10$) for pushing forward the performance boundary of dynamic convolution while enjoying parameter efficiency. To fill this gap, we propose **KernelWarehouse**, a more general form of dynamic convolution, which redefines the basic concepts of "kernels", "assembling kernels" and "attention function" through the lens of exploiting convolutional parameter dependencies within the same layer and across neighboring layers of a ConvNet. We testify the effectiveness of KernelWarehouse on ImageNet and MS-COCO datasets using various types of ConvNet architectures. Thanks to its flexible design, KernelWarehouse can even reduce the model size of a ConvNet while improving the model accuracy, and it is also applicable to vision transformers.
 
 Basic experiments are conducted on the [ImageNet](http://www.image-net.org) benchmark, and downstream experiments are conducted on the [MS-COCO](https://cocodataset.org/#home) benchmark, showing leading performance. For instance, the ResNet18|ResNet50|MobileNetV2|ConvNeXt-Tiny model trained with KernelWarehouse on ImageNet reaches 76.05%|81.05%|75.92%|82.51% top-1 accuracy. Thanks to its flexible design, KernelWarehouse can even reduce the model size of a ConvNet while improving the accuracy, e.g., our ResNet18 model with 36.45%|65.10% parameter reduction to the baseline shows 2.89%|2.29% absolute improvement to top-1 accuracy.
 
@@ -101,14 +101,12 @@ Please refer to README.md in the folder of [detection](detection) for details.
 
 ## Citation
 If you find our work useful in your research, please consider citing:
-```bibtex
-@misc{li2023kernelwarehouse,
-      title={KernelWarehouse: Towards Parameter-Efficient Dynamic Convolution}, 
+```
+@inproceedings{li2024kernelwarehouse,
+      title={KernelWarehouse: Rethinking the Design of Dynamic Convolution}, 
       author={Chao Li and Anbang Yao},
-      year={2023},
-      eprint={2308.08361},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      booktitle={International Conference on Machine Learning},
+      year={2024}
 }
 ```
 
