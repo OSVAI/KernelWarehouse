@@ -5,7 +5,6 @@ from timm.data.constants import \
     IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD, IMAGENET_INCEPTION_MEAN, IMAGENET_INCEPTION_STD
 from timm.data import create_transform
 
-
 def build_dataset(is_train, args):
     if args.traditional_preprocess:
         transform = build_transform_tradition(is_train, args)
