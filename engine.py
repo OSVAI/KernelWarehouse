@@ -6,6 +6,7 @@ from timm.utils import accuracy, ModelEma
 
 import utils
 
+
 def get_temperature(iteration, epoch, iter_per_epoch, temp_epoch=20, temp_init_value=30.0, temp_end=0.0):
     total_iter = iter_per_epoch * temp_epoch
     current_iter = iter_per_epoch * epoch + iteration
