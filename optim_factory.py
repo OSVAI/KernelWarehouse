@@ -10,7 +10,6 @@ from timm.optim.radam import RAdam
 from timm.optim.rmsprop_tf import RMSpropTF
 from timm.optim.sgdp import SGDP
 
-
 import json
 
 try:
