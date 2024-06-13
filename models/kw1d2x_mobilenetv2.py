@@ -2,6 +2,7 @@ from torch import nn
 from modules.kernel_warehouse import Warehouse_Manager
 from timm.models.registry import register_model
 
+
 def _make_divisible(v, divisor, min_value=None):
     """
     This function is taken from the original tf repo.
