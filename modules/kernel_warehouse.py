@@ -7,6 +7,7 @@ import collections.abc
 import math
 from functools import partial
 
+
 def parse(x, n):
     if isinstance(x, collections.abc.Iterable):
         if len(x) == 1:
